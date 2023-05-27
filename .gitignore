@@ -1,0 +1,11 @@
+
+*.suo
+*.user
+bin/
+obj/
+*.dll
+*.exe
+packages/
+App.config.user
+Web.config.user
+.vscode/
