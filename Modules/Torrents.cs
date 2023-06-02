@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using MonoTorrent;
+using MonoTorrent.BEncoding;
 namespace CheckTorrent.Modules
 {
     internal class Torrents
     {
+       // MonoTorrent. torrent = new Mo
     }
 }

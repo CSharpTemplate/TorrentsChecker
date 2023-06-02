@@ -1,5 +1,7 @@
 ﻿using CheckTorrent.Components;
 using CheckTorrent.Modules;
+using System.Reflection.Metadata.Ecma335;
+
 namespace CheckTorrent.Events
 {
     internal class ButtonEvents
@@ -24,6 +26,7 @@ namespace CheckTorrent.Events
          */
         private void From_Click(object sender, EventArgs e)
         {
+            form.WhereFrom.Text = null;
             folder.Show();
             form.WhereFrom.Text = folder.getPath();
         }
@@ -46,6 +49,7 @@ namespace CheckTorrent.Events
             this.operation = new DirectoryOperation(this.form,form.WhereFrom.Text, form.WhereTo.Text);
                  operation.Load();
                  operation.Dir();
+
         }
     }
 }

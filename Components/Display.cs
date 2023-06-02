@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CheckTorrent.Interfaces;
+using System.CodeDom;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace CheckTorrent.Components
 {
@@ -27,9 +25,14 @@ namespace CheckTorrent.Components
             }
         }
 
+        public string GetText()
+        {
+            return form.Detail.Text;
+        }
+
         public void ClearText()
         {
-            this.form.Detail.Text = " ";
+            form.Detail.Clear();
         }
     }
 }
